@@ -1,0 +1,17 @@
+spring:
+    datasource:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        username: root
+        password: 1234
+        url: jdbc:mysql://localhost:3306/yajatime?useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    jpa:
+        database: mysql
+        database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+        generate-ddl: true
+        show-sql: true
+        hibernate:
+            format_sql: true
+            ddl-auto: create
+    mvc:
+        view:
+            suffix: .html
