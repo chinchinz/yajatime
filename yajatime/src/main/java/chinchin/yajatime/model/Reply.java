@@ -3,22 +3,19 @@ package chinchin.yajatime.model;
 import java.sql.Date;
 
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 import lombok.Data;
 
 @Data
 @Entity
-public class Article {
+public class Reply {
     @Id
-    @GeneratedValue
     private Long id;
     private Long boardId;
-    private String title;
-    private String content;
+    private Long articleId;
     private String author;
-    private int view;
-    private int like;
+    private String content;
     private Date createdAt;
+    private int like;
 }

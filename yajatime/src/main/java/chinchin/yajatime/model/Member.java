@@ -18,5 +18,5 @@ public class Member {
     private String school;
     private int grade;
     private int sex;
-    private List<Board> boards;
+    // private List<Long> boards;
 }
