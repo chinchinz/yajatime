@@ -1,6 +1,7 @@
 package chinchin.yajatime.model;
 
 import java.sql.Date;
+import java.time.LocalDate;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -20,5 +21,5 @@ public class Article {
     private String author;
     private int view;
     private int like;
-    private Date createdAt;
+    private LocalDate createdAt;
 }
